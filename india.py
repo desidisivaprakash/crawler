@@ -24,6 +24,7 @@ url5 = ['http://stats.espncricinfo.com/ci/engine/stats/index.html?class=2;filter
 for i in range(1,3):   #Mention the upper and lower limits
     url4 = url1 + url2 + str(i) + ';' + url3
     url5.append(url4)
+    
 data = open('ODI_ind_vs_scotland.csv','wb',)
 out = csv.writer(data)
 out.writerow(('Team', 'Result','Margin', 'Toss', 'Bat','Opposition','Ground','Date'))
